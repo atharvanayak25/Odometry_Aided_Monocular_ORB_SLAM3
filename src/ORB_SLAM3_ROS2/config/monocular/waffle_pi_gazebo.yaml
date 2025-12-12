@@ -1,0 +1,50 @@
+%YAML:1.0
+
+# --------------------------------------------------------------------------------------------
+# Camera Parameters
+# --------------------------------------------------------------------------------------------
+File.version: "1.0"
+Camera.type: "PinHole"
+
+# --- LEGACY FORMAT ---
+Camera.width: 640
+Camera.height: 480
+Camera.fps: 30       # <--- FIXED: Must be an integer (no .0)
+Camera.RGB: 1
+
+# --- NEW FORMAT ---
+Camera1.fx: 530.4
+Camera1.fy: 530.4
+Camera1.cx: 320.5
+Camera1.cy: 240.5
+Camera1.k1: 0.0
+Camera1.k2: 0.0
+Camera1.p1: 0.0
+Camera1.p2: 0.0
+
+# Re-define resolution for Camera1
+Camera1.width: 640
+Camera1.height: 480
+
+# --------------------------------------------------------------------------------------------
+# ORB Parameters
+# --------------------------------------------------------------------------------------------
+ORBextractor.nFeatures: 2000
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+# --------------------------------------------------------------------------------------------
+# Viewer Parameters
+# --------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500.0
