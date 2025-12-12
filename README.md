@@ -50,28 +50,28 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-##🚀 Usage
+## 🚀 Usage
 
-##Step 1: Launch the Simulation
+## Step 1: Launch the Simulation
 
 Start the TurtleBot 4 simulation in Gazebo/Ignition.
 ```bash
 ros2 launch turtlebot4_ignition_bringup turtlebot4_ignition.launch.py
 ```
-##Step 2: Run ORB-SLAM3
+## Step 2: Run ORB-SLAM3
 
 Launch the SLAM node. Ensure your vocabulary file path and camera calibration file are correctly set in the configuration.
 ```bash
 ros2 launch orb_slam3_ros2 orb_slam3_mono_inertial.launch.py
 ```
 
-##🔧 Configuration
+## 🔧 Configuration
 
 Camera Calibration: Check src/ORB_SLAM3_ROS2/params/ to ensure the camera intrinsics match the TurtleBot 4 simulation camera.
 
 Odometry Topic: The wrapper is configured to subscribe to /odom (or the specific topic provided by the TurtleBot 4 simulator).
 
-##🤝 Acknowledgements
+## 🤝 Acknowledgements
 
 ORB-SLAM3: UZ-SLAMLab/ORB_SLAM3
 
