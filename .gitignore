@@ -1,0 +1,21 @@
+# Build and Install folders
+build/
+devel/
+install/
+log/
+bin/
+lib/
+
+# CMake artifacts
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python & IDEs
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.swp
